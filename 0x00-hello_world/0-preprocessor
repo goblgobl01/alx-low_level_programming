@@ -1,2 +1,2 @@
 #!/bin/bash
-cpp main.js -o $CFILE
+cpp $CFILE -o c
