@@ -6,22 +6,13 @@
  *
  *Return: always 0 (success)
 */
-int main(void)
-
+int main()
 {
-int a;
-char b;
-long int c;
-long long int d;
-float e;
-int A = sizeof(a);
-int B = sizeof(b);
-int C = sizeof(c);
-int D = sizeof(d);
-int E = sizeof(e);
-printf ("Size of a char: %d byte(s)\n",B);
-printf ("Size of a int: %d byte(s)\n",A);
-printf ("Size of a long int: %d byte(s)\n",C);
-printf ("Size of a long long int: %d byte(s)\n",D);
-printf ("Size of a float: %d byte(s)\n",E);
+    printf("Size of a char: %zu byte(s)\n", sizeof(char));
+    printf("Size of an int: %zu byte(s)\n", sizeof(int));
+    printf("Size of a long int: %zu byte(s)\n", sizeof(long int));
+    printf("Size of a long long int: %zu byte(s)\n", sizeof(long long int));
+    printf("Size of a float: %zu byte(s)\n", sizeof(float));
+
+    return 0;
 }
