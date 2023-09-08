@@ -8,6 +8,6 @@ for ( a = 0 ; a < 10 ; a++ )
 	putchar(',');
 	putchar(' ');
 }
-putchar (\b\b\n);
+putchar ('\b\b\n');
 return (0);
 }
