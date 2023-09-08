@@ -1,3 +1,4 @@
+/*this a simple program that print a string*/
 #include <stdio.h>
 
 int main(void)
