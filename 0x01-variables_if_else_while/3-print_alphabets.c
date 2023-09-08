@@ -7,7 +7,7 @@
  *Return: always 0 (success)
 */
 int main(void)
-{ 
+{
 char a;
 char b;
 
