@@ -1,4 +1,6 @@
-/*this a simple program that print a string*/
+/**
+ * this a simple program that print a string
+ */
 #include <stdio.h>
 
 /*this is the main function*/
