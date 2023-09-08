@@ -19,9 +19,9 @@ int B = sizeof(b);
 int C = sizeof(c);
 int D = sizeof(d);
 int E = sizeof(e);
-printf ("Size of a char: %d byte(s)\n",A);
 printf ("Size of a char: %d byte(s)\n",B);
-printf ("Size of a char: %d byte(s)\n",C);
-printf ("Size of a char: %d byte(s)\n",D);
-printf ("Size of a char: %d byte(s)\n",E);
+printf ("Size of a int: %d byte(s)\n",A);
+printf ("Size of a long int: %d byte(s)\n",C);
+printf ("Size of a long long int: %d byte(s)\n",D);
+printf ("Size of a float: %d byte(s)\n",E);
 }
