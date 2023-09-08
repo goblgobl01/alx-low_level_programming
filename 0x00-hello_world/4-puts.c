@@ -1,14 +1,16 @@
-/**
- * this a simple program that print a string
- */
 #include <stdio.h>
-
-/*this is the main function*/
+/**
+ * main-function declaration
+ *
+ *Description: a c program that print a simple string
+ *
+ *Return nothing
+*/
 int main(void)
 {
-char str[] = "\"Programming is like building a multilingual puzzle";
+	char str[] = "\"Programming is like building a multilingual puzzle";
 
-puts(str);
+	puts(str);
 
-return (0);
+	return (0);
 }
