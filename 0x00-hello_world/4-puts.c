@@ -4,7 +4,7 @@
  *
  *Description: a c program that print a simple string
  *
- *Return nothing
+ *Return: always 0 (success)
 */
 int main(void)
 {
