@@ -9,6 +9,5 @@
 */
 int _putchar(void) {
 	char str[] = "_putchar\n";
-	int length = sizeof(str) - 1;
-	return write(1, str, length);
+	return write(1, str, 9);
 }
