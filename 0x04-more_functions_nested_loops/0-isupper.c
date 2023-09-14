@@ -7,6 +7,7 @@
  *
  *Return: always 0 (success)
 */
-int _isupper(int c) {
+int _isupper(int c)
+{
 	return (c >= 'A' && c <= 'Z');
 }
