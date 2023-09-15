@@ -3,19 +3,20 @@
 /**
  * more_numbers - print more numbers
  */
-
 void more_numbers(void)
 {
-	int i, j;
 
-	for (i = 1; i <= 10; i++)
+char numbers[] = "01234567891011121314";
+int length = sizeof(numbers) - 1;
+
+	for (int j = 0; j < 10 ; j++)
 	{
-		for (j = 0; j <= 14; j++)
+		for (int i = 0; i < length; i++)
 		{
-			if (j >= 10)
-				_putchar('1');
-			_putchar (j % 10 + '0');
+		putchar(numbers[i]);
 		}
-		_putchar('\n');
+	putchar ('\n');
 	}
+
+	putchar('\n');
 }
