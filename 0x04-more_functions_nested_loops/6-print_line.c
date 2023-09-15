@@ -2,7 +2,8 @@
 
 /**
  * print_line - this function print a line
- */
+ *@n: charcter number 
+*/
 
 void print_line(int n)
 {
