@@ -15,13 +15,13 @@ while (str[moha] != '\0')
 	moha++;
 if ((moha % 2) == 0)
 {
-	for (i = (moha / 2) ; i <= moha ; i++)
+	for (i = moha / 2 ; i < moha ; i++)
 		_putchar(str[i]);
 }
 else if ((moha % 2) != 0)
 {
 
-	for (j = ((moha - 1) / 2) ; j <= moha ; j++)
+	for (j = (moha - 1) / 2 ; j < moha - 1 ; j++)
 		_putchar(str[j]);
 }
 
