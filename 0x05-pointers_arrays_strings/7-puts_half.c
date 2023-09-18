@@ -1,11 +1,8 @@
 #include "main.h"
 
 /**
-
  * puts_half - Prits half of the string
-
  * @str: The input string.
-
  */
 void puts_half(char *str)
 {
