@@ -21,7 +21,7 @@ if ((moha % 2) == 0)
 else if ((moha % 2) != 0)
 {
 
-	for (j = (moha - 1) / 2 ; j < moha - 1 ; j++)
+	for (j = (moha - 1) / 2 ; j < moha ; j++)
 		_putchar(str[j]);
 }
 
