@@ -3,7 +3,6 @@
 /**
  * _strlen- a function that return the length of a string
  *@s : is a pointer that pont to the string
- *@i : is simple loop increment
  *
  *
  *Return: always 0 (success)
