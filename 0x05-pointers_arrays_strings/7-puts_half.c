@@ -19,7 +19,7 @@ for (i = (moha / 2); i < moha; i++)
 }
 else if ((moha % 2) != 0)
 {
-for (j = ((moha - 2) / 2); j < moha; j++)
+for (j = ((moha - 3) / 2); j < moha; j++)
 	_putchar(str[j]);
 }
 
