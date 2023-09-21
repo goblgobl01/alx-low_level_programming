@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * _strncat - a function concatenates two strings
@@ -8,27 +8,21 @@
  *
  * Return: A pointer to the destination string
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
 int dest_length;
 int i;
-int j;
 char *dest_start = dest;
 
 dest_length = 0;
 while (*(dest + dest_length) != '\0')
-dest_length++;
+	dest_length++;
 
-j = 0;
-for (i = dest_length; i < (dest_length + n); i++)
+for (i = 0; i < n && src[i] != '\0'; i++)
 {
-dest[i] = src[j];
-j++;
+	dest[dest_length + i] = src[i];
 }
-
-if (dest_length + n < 98)
-dest[dest_length + n] = '\0';
+dest[dest_length + i] = '\0';
 
 return (dest_start);
 }
