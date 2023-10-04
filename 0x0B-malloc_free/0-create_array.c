@@ -19,7 +19,7 @@ if (size == 0)
 else
 {
 	ptr = (char *)malloc(size * sizeof(char));
-	for (i = 0 ; i < size - 1 ; i++)
+	for (i = 0 ; i < size ; i++)
 		*(ptr + i) = c;
 	return (ptr);
 }
