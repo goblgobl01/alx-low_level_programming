@@ -19,7 +19,7 @@ int i, j;
 
 if (str == NULL)
 	return (NULL);
-else if (str == '\0')
+else if (*str == '\0')
 	return ('\0');
 
 else
