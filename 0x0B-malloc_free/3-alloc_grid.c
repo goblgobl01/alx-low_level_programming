@@ -28,9 +28,9 @@ else
 	for (a = 0 ; a < height ; a++)
 		ptr[a] = malloc(sizeof(int) * width);
 
-	for (int i = 0; i < height; i++)
+	for (i = 0; i < height; i++)
 	{
-		for (int j = 0; j < width; j++)
+		for (j = 0; j < width; j++)
 			ptr[i][j] = 0;
 	}
 
