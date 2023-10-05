@@ -30,6 +30,10 @@ else
 	j--;
 
 	ptr = (char *) malloc(j * sizeof(char));
+	if (ptr == NULL)
+	{
+	return (NULL);
+	}
 	for (i = 0 ; i <= j ; i++)
 	*(ptr + i) = str[i];
 	return (ptr);
