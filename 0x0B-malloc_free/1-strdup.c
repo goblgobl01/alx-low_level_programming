@@ -29,7 +29,7 @@ else
 
 	j--;
 
-	ptr = (char *) malloc(j * sizeof(char));
+	ptr = (char *) malloc((j + 1) * sizeof(char));
 	if (ptr == NULL)
 	{
 	return (NULL);
