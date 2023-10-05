@@ -28,18 +28,9 @@ else
 	for (a = 0; a < height; a++)
 	{
 		ptr[a] = malloc(sizeof(int) * width);
+
 		if (ptr[a] == NULL)
-		{
-			allocation_successful = 0;
-			break;
-		}
-	}
-	if (!allocation_successful)
-	{
-		for (i = 0; i < a; i++)
-			free(ptr[i]);
-		free(ptr);
-		return (NULL);
+			return (NULL);
 	}
 	for (i = 0; i < height; i++)
 	{
