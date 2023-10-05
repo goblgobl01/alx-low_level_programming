@@ -27,8 +27,6 @@ else
 	while (str[j] != '\0')
 		j++;
 
-	j--;
-
 	ptr = (char *) malloc((j + 1) * sizeof(char));
 	if (ptr == NULL)
 	{
