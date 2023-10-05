@@ -29,7 +29,7 @@ j = 0;
 while (s2[j] != '\0')
 	j++;
 
-ptr = (char *)malloc((((j + 1) * sizeof(char)) + ((i + 1) * sizeof(char))) - 1);
+ptr = (char *)malloc(((j + 1) * sizeof(char)) + ((i + 1) * sizeof(char)) - 1);
 
 if (ptr == NULL)
 	return (NULL);
