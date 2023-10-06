@@ -16,11 +16,12 @@ int total_length = 0;
 int current_position = 0;
 int i, j;
 int a, b;
+char *result;
 
 if (ac == 0 || av == NULL)
 	return (NULL);
 
-for (int a = 0; a < ac; a++)
+for (a = 0; a < ac; a++)
 {
 	b = 0;
 	while (av[a][b] != '\0')
@@ -31,7 +32,7 @@ for (int a = 0; a < ac; a++)
 	total_length++;
 }
 
-char *result = (char *)malloc(total_length + 1);
+result = (char *)malloc(total_length + 1);
 
 if (result == NULL)
 	return (NULL);
