@@ -1,61 +1,30 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
- * main - Entry point of the program
+ * main - multiplicatiion of two parameters
  *
  * @argc: The number of command-line arguments
  * @argv: An array of strings containing the command-line arguments
  *
- * Return: 0 on success, 1 on error
+ * Return: 1 if error 0 if success
  */
-int main(int argc, char **argv)
+
+int main(int argc, char *argv[])
 {
-int i, j, result1, result2, result, sign1, sign2;
-(void) argc;
+int num1, num2, result;
 
-sign1 = 1;
-sign2 = 1;
-
-if (argv[1] == NULL || argv[2] == NULL)
+if (argc != 3)
 {
 	printf("Error\n");
 	return (1);
 }
 
-else
-{
-if (argv[1][0] == '-')
-	sign1 = 0;
+num1 = atoi(argv[1]);
+num2 = atoi(argv[2]);
 
-i = 0;
-while (argv[1][i])
-{
-
-	if (argv[1][i] >= '0' && argv[1][i]  <= '9')
-		result1 = result1 * 10 + (argv[1][i] - '0');
-	i++;
-}
-
-if (sign1 == 0)
-	result1 = -result1;
-
-
-if (argv[2][0] == '-')
-	sign2 = 0;
-
-j = 0;
-while (argv[2][j])
-{
-	if (argv[2][j] >= '0' && argv[2][j]  <= '9')
-		result2 = result2 * 10 + (argv[2][j] - '0');
-	j++;
-}
-
-if (sign2 == 0)
-	result2 = -result2;
-
-result = result1 * result2;
+result = num1 *num2;
 
 printf("%d\n", result);
-}
 return (0);
 }
