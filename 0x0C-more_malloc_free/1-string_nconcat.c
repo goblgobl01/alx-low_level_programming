@@ -26,7 +26,7 @@ else
 {
 	ptr = malloc(sizeof(s1) + n);
 	if (ptr == NULL)
-		return (NULL)
+		return (NULL);
 }
 a = 0;
 while (s1[a] != '\0')
