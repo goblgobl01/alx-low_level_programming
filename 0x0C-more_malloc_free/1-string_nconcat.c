@@ -18,16 +18,16 @@ char *ptr;
 
 if (n >= sizeof(s2))
 {
-	ptr = malloc(sizeof(s1) + sizeof(s2) - 1);
-	if (ptr == NULL)
-		return (NULL);
+	ptr = malloc(strlen(s1) + strlen(s2) + 1);
 }
 else
 {
-	ptr = malloc(sizeof(s1) + n);
-	if (ptr == NULL)
-		return (NULL);
+	ptr = malloc(strlen(s1) + n + 1);
 }
+
+if (ptr == NULL)
+	return (NULL);
+
 a = 0;
 while (s1[a] != '\0')
 {
@@ -36,7 +36,7 @@ while (s1[a] != '\0')
 }
 
 b = 0;
-while (s2[b] != '\0' && b <= n)
+while (s2[b] != '\0' && b < n)
 {
 	*(ptr + a) = s2[b];
 	a++;
