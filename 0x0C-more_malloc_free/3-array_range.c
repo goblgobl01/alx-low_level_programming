@@ -15,12 +15,11 @@ int i;
 
 if (min > max)
 	return (NULL);
-ptr = malloc(sizeof(int) * max);
+ptr = malloc(sizeof(int) * (max + 1));
 if (ptr == NULL)
 	return (NULL);
-
-for (i = 0; i < max - min; i++)
-	*(ptr + i) = i;
+for (i = 0; i <= max - min; i++)
+	*(ptr + i) = min + i;
 
 return (ptr);
 }
