@@ -16,7 +16,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 unsigned int a, b;
 char *ptr;
 
-if (n >= sizeof(s2))
+if (n >= strlen(s2))
 {
 	ptr = malloc(strlen(s1) + strlen(s2) + 1);
 }
