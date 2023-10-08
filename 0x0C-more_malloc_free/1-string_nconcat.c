@@ -17,11 +17,17 @@ unsigned int a, b;
 char *ptr;
 
 if (n >= sizeof(s2))
+{
 	ptr = malloc(sizeof(s1) + sizeof(s2) - 1);
-
+	if (ptr == NULL)
+		return (NULL);
+}
 else
+{
 	ptr = malloc(sizeof(s1) + n);
-
+	if (ptr == NULL)
+		return (NULL)
+}
 a = 0;
 while (s1[a] != '\0')
 {
