@@ -22,5 +22,7 @@ if (ptr == NULL)
 for (i = 0; i < max; i++)
 	*(ptr + i) = i;
 
+*(ptr + i) = i;
+
 return (ptr);
 }
