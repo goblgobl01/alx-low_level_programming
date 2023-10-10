@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-void main()
+/**
+ * main - a function that print its conataining file
+ *
+ */
+void main(void)
 {
 printf("%s\n", __FILE__);
 }
