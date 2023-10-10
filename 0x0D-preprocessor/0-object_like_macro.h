@@ -1,1 +1,6 @@
+#ifndef YOUR_HEADER_FILE_NAME_H
+#define YOUR_HEADER_FILE_NAME_H
+
 #define SIZE 1024
+
+#endif
