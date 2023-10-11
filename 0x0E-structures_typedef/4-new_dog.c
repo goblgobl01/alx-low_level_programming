@@ -1,31 +1,43 @@
-#include "dog.h"
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
+#include "dog.h"
 
-/*
-
-Write a function that creates a new dog.
-
-Prototype: dog_t *new_dog(char *name, float age, char *owner);
-You have to store a copy of name and owner
-Return NULL if the function fails
-
-*/
+/**
+ * new_dog - create a new dog
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
+ *
+ * Return: a pointer to the new dog
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *ptr;
-char *name_storage;
-char *owner_storage;
+dog_t *new_dog;
+char *name_copy, *owner_copy;
 
-strcpy(name_storage,name);
-strcpy(owner_storage,owner);
+new_dog = malloc(sizeof(dog_t));
 
-ptr->name = name_storage;
-ptr->owner = owner_storage;
-ptr->age = age;
+if (new_dog == NULL)
+	return (NULL);
 
-if (ptr == NULL)
-	return(NULL);
-else
-	return(ptr);
+name_copy = malloc(strlen(name) + 1);
+owner_copy = malloc(strlen(owner) + 1);
 
+if (name_copy == NULL || owner_copy == NULL)
+{
+	free(new_dog);
+	free(name_copy);
+	free(owner_copy);
+	return (NULL);
+}
+
+strcpy(name_copy, name);
+strcpy(owner_copy, owner);
+
+new_dog->name = name_copy;
+new_dog->age = age;
+new_dog->owner = owner_copy;
+
+return (new_dog);
 }
