@@ -10,6 +10,12 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+if (d == NULL)
+{
+	fprintf(stderr, "Invalid pointer to struct dog\n");
+	exit(1);
+}
+
 d->name = name;
 d->owner = owner;
 d->age = age;
