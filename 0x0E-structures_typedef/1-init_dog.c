@@ -1,5 +1,6 @@
 #include "dog.h"
-
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * init_dog - Initialize a dog structure
  * @d: Pointer to the struct dog to be initialized
@@ -12,7 +13,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 if (d == NULL)
 {
-	fprintf(stderr, "Invalid pointer to struct dog\n");
+	printf("Invalid pointer to struct dog\n");
 	exit(1);
 }
 
