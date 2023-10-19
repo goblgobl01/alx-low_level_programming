@@ -22,8 +22,5 @@ if(new->str == NULL)
 new->next = *head;
 *head = new;
 
-if(head == NULL)
-	return (NULL);
-else
-	return (new);
+return(new);
 }
