@@ -20,10 +20,8 @@ if (h == NULL)
 while (h != NULL)
 {
 	if (h->str != NULL)
-	{
 		printf("[%d] %s\n", h->len, h->str);
-		return (0);
-	}
+
 	else
 		printf("[0] (nil)\n");
 	count++;
