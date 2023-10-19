@@ -20,7 +20,7 @@ if (h == NULL)
 while (h != NULL)
 {
 	if (h->str != NULL)
-		printf("[%s] %d\n", h->str, h->len);
+		printf("[%d] %s\n", h->len, h->str);
 	else
 		printf("[0] (nil)\n");
 	count++;
