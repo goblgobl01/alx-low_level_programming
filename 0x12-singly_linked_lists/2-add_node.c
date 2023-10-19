@@ -13,11 +13,6 @@ if(new == NULL)
 	return (NULL);
 
 new->str = strdup(str);
-if(new->str == NULL)
-{
-	free(new->str);
-	return (NULL);
-}
 
 new->next = *head;
 *head = new;
