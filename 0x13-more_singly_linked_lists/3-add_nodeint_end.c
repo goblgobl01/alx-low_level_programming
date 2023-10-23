@@ -5,37 +5,35 @@
 /**
  * add_node_end - Add a new node at the end of a linked list.
  * @head: A pointer to the head of the linked list.
- * @str: The string to be stored in the new node.
+ * @n: The integer that gonna be stored on the new node.
  *
- * Return: A pointer .
+ * Return: A pointer.
  */
-list_t *add_node_end(list_t **head, const char *str)
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-list_t *ptr;
-list_t *new;
+listint_t *ptr;
+listint_t *new;
 
 if (*head == NULL)
 {
-	new = malloc(sizeof(size_t));
+	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
 	new->next = NULL;
-	new->str = strdup(str);
-	new->len = strlen(str);
+	new->n = n;
 	*head = new;
 	return (*head);
 }
 else
 {
-ptr = *head;
+	ptr = *head;
 	while (ptr->next != NULL)
 		ptr = ptr->next;
-	new = malloc(sizeof(size_t));
+	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
 	new->next = NULL;
-	new->str = strdup(str);
-	new->len = strlen(str);
+	new->n = n;
 	ptr->next = new;
 	return (*head);
 }
