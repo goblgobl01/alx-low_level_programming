@@ -18,10 +18,10 @@ unsigned int i = 0;
 
 ptr = *head;
 
-if(idx == 0)
+if (idx == 0)
 {
 	new = malloc(sizeof(listint_t));
-	if(new == NULL)
+	if (new == NULL)
 		return (NULL);
 	new->next = *head;
 	new->n = n;
@@ -31,13 +31,13 @@ if(idx == 0)
 
 else
 {
-	while(i != (idx - 1))
+	while (i != (idx - 1))
 	{
 		ptr = ptr->next;
 		i++;
 	}
 	new = malloc(sizeof(listint_t));
-	if(new == NULL)
+	if (new == NULL)
 		return (NULL);
 	new->next = ptr->next;
 	new->n = n;
