@@ -28,7 +28,6 @@ if (idx == 0)
 	*head = new;
 	return (*head);
 }
-
 else
 {
 	while (i != (idx - 1))
@@ -36,6 +35,8 @@ else
 		ptr = ptr->next;
 		i++;
 	}
+	if (ptr == NULL)
+		return (NULL);
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
