@@ -15,7 +15,7 @@ listint_t *ptr;
 unsigned int pos = 0;
 
 ptr = head;
-while(pos != index)
+while (pos != index)
 {
 	ptr = ptr->next;
 	pos++;
@@ -23,6 +23,6 @@ while(pos != index)
 if (ptr == NULL)
 	return (NULL);
 else
-	return(ptr);
+	return (ptr);
 
 }

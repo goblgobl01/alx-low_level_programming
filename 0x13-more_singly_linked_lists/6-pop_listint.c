@@ -7,6 +7,8 @@
  * pop_listint - Frees a
  *
  * @head: A pointer to the first node in the list.
+ *
+ * Return: The sum of all elements in the list.
  */
 int pop_listint(listint_t **head)
 {

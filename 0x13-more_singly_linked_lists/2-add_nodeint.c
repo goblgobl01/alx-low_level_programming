@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_node - Add a new node at the beginning of a linked list.
+ * add_nodeint - Add a new node at the beginning of a linked list.
  * @head: A pointer to the pointer to the head of the list.
  * @n:a new variable thats gonna be added.
  *
